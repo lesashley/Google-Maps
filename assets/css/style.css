@@ -17,6 +17,7 @@ div#map{
   background-color: #f7b617;
   border: 2px solid #ffffff;
   width: 85%;
+  display: -webkit-inline-box;
 }
 .form-control::placeholder,
 i{
@@ -28,19 +29,20 @@ i{
 .line{
   border-right: 1px solid #ffffff;
 }
+.none{
+  display: none;
+}
 #tarifa{
+  /*display: flex;
+  align-items: center;
+  justify-content: center;*/
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 200px;
-  height: 200px;
-  background-color: black;
+  width: 150px;
+  height: 150px;
+  background-color: rgb(77, 77, 77);
   z-index: 3;
-}
-#tarifa{
   color: #f7b617;
-  font-size: 2rem;
-}
-.none{
-  display: none;
+  font-size: 4rem;
 }
