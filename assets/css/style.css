@@ -1,17 +1,46 @@
-body{
-  text-align: center;
+*{
+  font-family: 'Raleway', sans-serif;
 }
 div#map{
   width: 100%;
-  height: 80vh;
+  height: 90vh;
 }
 #encuentrame{
-  width: 20%;
   text-align: center;
-  border: 0;
-  background-color: rgb(64, 255, 77);
+  background-color: #ffffff;
+}
+.header{
+  background-color: #f7b617;
+  padding: 10px 0;
+}
+.form-inline .form-control{
+  background-color: #f7b617;
+  border: 2px solid #ffffff;
+  width: 85%;
+}
+.form-control::placeholder,
+i{
   color: #ffffff;
-  height: 30px;
-  font-size: 1.3rem;
-  margin-top: 20px;
+}
+i{
+  margin-right: 10px;
+}
+.line{
+  border-right: 1px solid #ffffff;
+}
+#tarifa{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 200px;
+  background-color: black;
+  z-index: 3;
+}
+#tarifa{
+  color: #f7b617;
+  font-size: 2rem;
+}
+.none{
+  display: none;
 }

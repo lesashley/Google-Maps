@@ -5,13 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <div id="map">
+    <div class="container-fluid">
+      <div id="tarifa" class="none text-center"></div>
+      <div class="row header">
+        <div class="col-xs-12 form-inline">
+          <div class="col-xs-12 col-md-4 form-group">
+            <i class="glyphicon glyphicon-map-marker"></i>
+            <input type="text" class="form-control" id="partida" placeholder="Ingresa tu punto de partida">
+          </div>
+          <div class="col-xs-12 col-md-4 form-group">
+            <i class="glyphicon glyphicon-send"></i>
+            <input type="text"  class="form-control" id="destino" placeholder="Ingresa tu destino">
+          </div>
+          <div class="col-xs-6 col-md-2 line text-center">
+            <button type="button" name="button" class="btn btn-default btn-md" id="trazar">Trazar ruta</button>
+          </div>
+          <div class="col-xs-6 col-md-2 text-center">
+            <button type="button" name="button" class="btn btn-default btn-md" id="encuentrame">Encuéntrame</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id="map">
+        </div>
+      </div>
     </div>
-    <button type="button" name="button" id="encuentrame">Encuéntrame</button>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBrQ96dA0nXu71y_2_4d5qsCDzxwBhKKXU&callback=initMap&libraries=places"></script>
     <script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
