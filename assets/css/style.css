@@ -33,14 +33,10 @@ i{
   display: none;
 }
 #tarifa{
-  /*display: flex;
-  align-items: center;
-  justify-content: center;*/
   position: fixed;
   bottom: 0;
   right: 0;
   width: 150px;
-  height: 150px;
   background-color: rgb(77, 77, 77);
   z-index: 3;
   color: #f7b617;

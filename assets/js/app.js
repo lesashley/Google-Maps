@@ -42,7 +42,7 @@ function initMap() {
   var directionsService = new google.maps.DirectionsService;
   var directionsDisplay = new google.maps.DirectionsRenderer;
   var tarifa = document.getElementById("tarifa");
-  
+
   var calculateAndDisplayRoute = function(directionsService, directionsDisplay){
     directionsService.route({
       origin: inputPartida.value,
@@ -56,9 +56,11 @@ function initMap() {
         if (costo < 4) {
           tarifa.innerHTML = "S/. 4";
         }
-        tarifa.innerHTML = "S/. " + parseInt(costo);
+        else {
+          tarifa.innerHTML = "S/. " + parseInt(costo);
+        }
         directionsDisplay.setDirections(response);
-        // miUbicacion.setMap(null);
+        miUbicacion.setMap(null);
       } else {
         window.alert("No encontramos una ruta.");
       }
